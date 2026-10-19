@@ -1,0 +1,94 @@
+/* Bước 7 & 9: Định dạng font chữ, căn lề và tổng thể */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Bước 4 & 7: Định dạng banner ảnh và tiêu đề truyện */
+.story-banner {
+    width: 100%;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.story-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* Bước 8: Định dạng khối mục lục, khung viền, màu nền, hover */
+.toc-box {
+    background-color: #eef7ee;
+    border: 2px solid #4caf50;
+    border-radius: 6px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+}
+
+.toc-box h3 {
+    margin-top: 0;
+    color: #2e7d32;
+    border-bottom: 1px dashed #4caf50;
+    padding-bottom: 8px;
+}
+
+.toc-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.toc-box li h5 {
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.toc-box a {
+    color: #1b5e20;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Hiệu ứng hover cho liên kết mục lục */
+.toc-box a:hover {
+    color: #d32f2f;
+    text-decoration: underline;
+}
+
+/* Bước 9: Canh lề, giãn dòng và lùi đầu dòng cho văn bản */
+.chapter {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+.chapter h2 {
+    color: #1976d2;
+    font-size: 20px;
+}
+
+.chapter p {
+    text-align: justify;  /* Căn đều 2 bên */
+    text-indent: 30px;     /* Lùi đầu dòng 30px */
+    font-size: 16px;
+    margin-bottom: 12px;
+}
