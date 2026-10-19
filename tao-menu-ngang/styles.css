@@ -1,0 +1,64 @@
+/* Đặt phông chữ mặc định cho trang */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng thanh menu chính */
+#menu {
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+#menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Cho các mục menu nằm trên cùng một hàng ngang bằng float: left */
+#menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng thuộc tính liên kết thẻ a của menu cấp 1 */
+#menu li a {
+    width: 100px;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* Định dạng các liên kết trong menu con (cấp 2) */
+#menu ul ul li a {
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Đổi màu nền khi rê chuột vào liên kết */
+#menu li a:hover {
+    background-color: red;
+}
+
+/* Định vị và ẩn menu con */
+#menu ul ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    visibility: hidden;
+}
+
+/* Hiển thị menu con khi hover vào mục menu cha */
+#menu ul li:hover ul {
+    visibility: visible;
+}
