@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Image Gallery</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Bộ Sưu Tập Ảnh (Responsive Gallery)</h2>
+        
+        <!-- Grid System Bootstrap -->
+        <div class="row g-3">
+            <!-- 
+                Phân chia cột theo yêu cầu:
+                - col-12: Màn hình nhỏ (Mobile) hiển thị 1 ảnh / dòng (12/12)
+                - col-sm-6: Màn hình vừa (Tablet) hiển thị 2 ảnh / dòng (12/6 = 2)
+                - col-lg-3: Màn hình lớn (Desktop) hiển thị 4 ảnh / dòng (12/3 = 4)
+            -->
+            
+            <!-- Ảnh 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1015/400/300" class="gallery-img card-img-top" alt="Ảnh 1">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1018/400/300" class="gallery-img card-img-top" alt="Ảnh 2">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1025/400/300" class="gallery-img card-img-top" alt="Ảnh 3">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1035/400/300" class="gallery-img card-img-top" alt="Ảnh 4">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 5 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1043/400/300" class="gallery-img card-img-top" alt="Ảnh 5">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 6 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1050/400/300" class="gallery-img card-img-top" alt="Ảnh 6">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 6</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 7 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1069/400/300" class="gallery-img card-img-top" alt="Ảnh 7">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 7</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ảnh 8 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card shadow-sm">
+                    <img src="https://picsum.photos/id/1084/400/300" class="gallery-img card-img-top" alt="Ảnh 8">
+                    <div class="card-body text-center">
+                        <p class="card-text">Hình ảnh 8</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Nhúng Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
