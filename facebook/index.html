@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Trang chủ giản lược</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. Fixed Header ở trên cùng -->
+    <header class="header">
+        <div class="header-left">
+            <h1 class="logo">facebook</h1>
+            <input type="text" class="search-bar" placeholder="Tìm kiếm trên Facebook">
+        </div>
+
+        <nav class="header-center">
+            <a href="#" class="nav-item active">Trang chủ</a>
+            <a href="#" class="nav-item">Bạn bè</a>
+            <a href="#" class="nav-item">Video</a>
+            <a href="#" class="nav-item">Trò chơi</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="profile-thumb">User</div>
+        </div>
+    </header>
+
+    <!-- Khối chứa toàn bộ giao diện phía dưới Header -->
+    <div class="main-container">
+
+        <!-- 2. Left Sidebar (Fixed hoặc cố định góc trái) -->
+        <aside class="sidebar-left">
+            <ul class="menu-list">
+                <li class="menu-item"><strong>Nguyễn Văn A</strong></li>
+                <li class="menu-item">Bạn bè</li>
+                <li class="menu-item">Kỷ niệm</li>
+                <li class="menu-item">Đã lưu</li>
+                <li class="menu-item">Nhóm</li>
+                <li class="menu-item">Video</li>
+                <li class="menu-item">Bảng hiệu quả</li>
+            </ul>
+        </aside>
+
+        <!-- 3. Phần Nội dung chính (Main Feed ở giữa) -->
+        <main class="main-content">
+            
+            <!-- Tạo bài viết -->
+            <div class="card create-post">
+                <p><strong>A ơi, bạn đang nghĩ gì thế?</strong></p>
+                <hr style="margin: 10px 0; border: 0; border-top: 1px solid #e4e6eb;">
+                <div class="post-actions">
+                    <button>Video trực tiếp</button>
+                    <button>Ảnh/video</button>
+                    <button>Cảm xúc/hoạt động</button>
+                </div>
+            </div>
+
+            <!-- Bài viết 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>CodeGym Vietnam</strong>
+                        <div class="post-time">2 giờ trước</div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    Chào mừng bạn đến với bài tập thực hành thiết kế giao diện Facebook bằng HTML5 và CSS!
+                </div>
+                <div class="post-footer">
+                    <span>Thích</span>
+                    <span>Bình luận</span>
+                    <span>Chia sẻ</span>
+                </div>
+            </div>
+
+            <!-- Bài viết 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar"></div>
+                    <div>
+                        <strong>Lập trình viên Java Web</strong>
+                        <div class="post-time">5 giờ trước</div>
+                    </div>
+                </div>
+                <div class="post-body">
+                    Hệ thống Box Model, Grid View và CSS Layout giúp tạo ra các trang web chuyên nghiệp và responsive chuẩn SEO.
+                </div>
+                <div class="post-footer">
+                    <span>Thích</span>
+                    <span>Bình luận</span>
+                    <span>Chia sẻ</span>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- 4. Right Sidebar (Góc phải) -->
+        <aside class="sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul class="contact-list">
+                <li class="contact-item"><span class="status-dot"></span>Trần Văn B</li>
+                <li class="contact-item"><span class="status-dot"></span>Lê Thị C</li>
+                <li class="contact-item"><span class="status-dot"></span>Phạm Văn D</li>
+                <li class="contact-item"><span class="status-dot"></span>Hoàng Thị E</li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>
