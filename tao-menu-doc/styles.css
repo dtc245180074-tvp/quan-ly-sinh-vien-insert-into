@@ -1,0 +1,46 @@
+/* Reset font chữ và lề mặc định */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#menu, #menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+
+/* Định dạng các mục chọn của menu */
+#menu li {
+    list-style: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Định dạng thẻ liên kết a trong menu */
+#menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Hiệu ứng hover đổi màu nền sang đỏ */
+#menu li:hover {
+    background-color: red;
+}
+
+/* Ẩn danh sách con và định vị vị trí hiển thị */
+#menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 140px; /* 100px width + 20px padding-left + 20px padding-right = 140px */
+    visibility: hidden;
+}
+
+/* Hiện danh sách con khi hover vào mục menu cha */
+#menu ul li:hover ul {
+    visibility: visible;
+}
