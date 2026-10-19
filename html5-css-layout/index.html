@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout trang web sử dụng HTML5 & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Header</h1>
+        </header>
+
+        <!-- Thanh điều hướng (Nav) -->
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Khối chứa nội dung chính và sidebar -->
+        <div class="content-wrapper">
+            <!-- Khu vực nội dung chính -->
+            <section class="main-content">
+                <h2>Section - Nội dung chính</h2>
+                <article>
+                    <h3>Bài viết 1 (Article)</h3>
+                    <p>Nội dung chi tiết bài viết thứ nhất. Sử dụng thẻ article giúp phân chia các bài viết độc lập rõ ràng theo chuẩn HTML5.</p>
+                </article>
+                <article>
+                    <h3>Bài viết 2 (Article)</h3>
+                    <p>Nội dung chi tiết bài viết thứ hai. Các thẻ semantic tag giúp nâng cao tính tối ưu SEO cho website.</p>
+                </article>
+            </section>
+
+            <!-- Thanh bên (Aside) -->
+            <aside class="sidebar">
+                <h3>Aside - Thanh bên</h3>
+                <p>Nội dung phụ, quảng cáo, danh mục bài viết liên quan hoặc liên kết ngoài.</p>
+            </aside>
+        </div>
+
+        <!-- Chân trang (Footer) -->
+        <footer>
+            <p>&copy; 2026 CodeGym. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

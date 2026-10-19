@@ -1,0 +1,108 @@
+/* Reset CSS và cấu hình phông chữ cơ bản */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Khung chứa tổng thể (Container) */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. Header */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. Thanh điều hướng (Nav) */
+nav {
+    background-color: #e8491d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #cccccc;
+    color: #333;
+}
+
+/* 3. Khối nội dung chính + Sidebar (Sử dụng Clearfix / Flexbox) */
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Section (Nội dung chính - chiếm 70% chiều rộng) */
+.main-content {
+    flex: 7;
+    background-color: #ffffff;
+}
+
+article {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* Aside (Thanh bên - chiếm 30% chiều rộng) */
+.sidebar {
+    flex: 3;
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* 4. Footer */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    clear: both;
+}
+
+/* Hỗ trợ Responsive màn hình nhỏ (Mobile) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
